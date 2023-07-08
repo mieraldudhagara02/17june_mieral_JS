@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Average_Marks </title>
+</head>
+<body>
+    <div style= "height: 380px; width: 500px; background-color: rgb(0, 110, 118); margin: auto; border-radius: 5px; border: 2px solid rgb(0, 47, 47);">
+        <label for="sub1"  style="font-size: 25px; margin: 20px 5px 0px 10px; color: white;">Enter the Marks of Subject-1 :</label>
+        <input type="text" name="" id="sub1" style="margin-top: 20px; height: 25px; font-size: 20px; width: 100px; outline: none; border: 2px solid black;"><br><br>
+        <label for="sub2"  style="font-size: 25px; margin: 20px 5px 0px 10px; color: white;">Enter the Marks of Subject-2 :</label>
+        <input type="text" name="" id="sub2" style="margin-top: 20px; height: 25px; font-size: 20px; width: 100px; outline: none; border: 2px solid black;"><br><br>
+        <label for="sub3"  style="font-size: 25px; margin: 20px 5px 0px 10px; color: white;">Enter the Marks of Subject-3 :</label>
+        <input type="text" name="" id="sub3" style="margin-top: 20px; height: 25px; font-size: 20px; width: 100px; outline: none; border: 2px solid black;"><br><br>
+        <span style="font-size: 25px; color: white; margin-left: 10px;">Total Marks:</span> <span id="total" style="font-size: 25px; color: white;"></span><br>
+        <span style="font-size: 25px; color: white; margin-left: 10px;">Average Marks:</span> <span id="average" style="font-size: 25px; color: white;"></span><br><br>
+        <button onclick="average()"  style="height: 30px; width: 150px; font-size: 20px; margin: 35px 0px 0px 170px; background-color: transparent; border: 1px solid black; color: white;">Click Here!!</button>
+    </div>
+
+    <script>
+        function average(){
+            var value1 = parseFloat(document.getElementById("sub1").value);
+            var value2 = parseFloat(document.getElementById("sub2").value);
+            var value3 = parseFloat(document.getElementById("sub3").value);
+
+            var Total = value1 + value2 + value3;
+            document.getElementById("total").innerHTML = +Total;
+
+            var Average = Total / 3;
+            document.getElementById("average").innerHTML = +Average;
+        }
+    </script>
+</body>
+</html>

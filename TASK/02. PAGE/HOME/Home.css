@@ -1,0 +1,128 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#Page{
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVIGATION START */
+nav{
+    height: 25px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5%;
+}
+nav #n1{
+    height: 25px;
+    width: 15%;
+    font-size: 20px;
+    background-color: transparent;
+    color: blue;
+    margin-left: 10px;
+    float: left;
+}
+nav #n2{
+    height: 25px;
+    width: 55%;
+    margin-left: 50px;
+    background-color: transparent;
+    float: left;
+}
+#n2 input{
+    width: 600px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0px 1px blue;
+    color: gray;
+}
+nav #n3{
+    height: 25px;
+    width: 30%;
+    background-color: transparent;
+    float: left;
+    display: block
+}
+#n3 ul li{
+    list-style: none;
+    display: inline;
+    padding-right: 20px;
+    color: blue;
+    font-size: 20px;
+}
+/* NAVIGATION OVER */
+
+/* HEADER START */
+header{
+    height: 30px;
+    width: 100%;
+    background-color: blue;
+    margin-top: 20px;
+}
+header #h1 div a{
+    height: 20px;
+    width: 15%;
+    line-height: 1.6;
+    margin-left: 15px;
+    background-color: transparent;
+    font-size: 18px;
+    color: white;
+    float: left;
+    text-decoration: none;
+}
+header #h2{
+    height: 20px;
+    width: 70%;
+    background-color: transparent;
+    float: left;
+    margin-left: 210px;
+    display: block;
+}
+#h2 ul li{ 
+    list-style: none;
+    display: inline;
+    padding: 0px 20px;
+    color: white;
+    line-height: 1.5;
+}
+header #h2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+#bar{
+    display: none;
+}
+/* HEADER OVER */
+
+/* SECTION-1 START */
+#one{
+    height: 200px;
+    width: 100%;
+    margin-top: 5px;
+}
+#one img{
+    height: 200px;
+    width: 100%;
+}
+/* SECTION-1 OVER */
+
+/* SECTION-2 START */
+#two{
+    height: 400px;
+    width: 100%;
+    background-color: bisque;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+#left2{
+    height: 400px;
+    width: 70%;
+    background-color: blue;
+}

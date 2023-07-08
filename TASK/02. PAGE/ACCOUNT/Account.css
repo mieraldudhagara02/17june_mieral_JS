@@ -1,0 +1,200 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#Page{
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVIGATION START */
+nav{
+    height: 25px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5%;
+}
+nav #n1{
+    height: 25px;
+    width: 15%;
+    font-size: 20px;
+    background-color: transparent;
+    color: blue;
+    margin-left: 10px;
+    float: left;
+}
+nav #n2{
+    height: 25px;
+    width: 55%;
+    margin-left: 50px;
+    background-color: transparent;
+    float: left;
+}
+#n2 input{
+    width: 600px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0px 1px blue;
+    color: gray;
+}
+nav #n3{
+    height: 25px;
+    width: 30%;
+    background-color: transparent;
+    float: left;
+    display: block
+}
+#n3 ul li{
+    list-style: none;
+    display: inline;
+    padding-right: 20px;
+    color: blue;
+    font-size: 20px;
+}
+/* NAVIGATION OVER */
+
+/* HEADER START */
+header{
+    height: 30px;
+    width: 100%;
+    background-color: blue;
+    margin-top: 20px;
+}
+header #h1 div a{
+    height: 20px;
+    width: 15%;
+    line-height: 1.6;
+    margin-left: 15px;
+    background-color: transparent;
+    font-size: 18px;
+    color: white;
+    float: left;
+    text-decoration: none;
+}
+header #h2{
+    height: 20px;
+    width: 70%;
+    background-color: transparent;
+    float: left;
+    margin-left: 210px;
+    display: block;
+}
+#h2 ul li{ 
+    list-style: none;
+    display: inline;
+    padding: 0px 20px;
+    color: white;
+    line-height: 1.5;
+}
+header #h2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+#bar{
+    display: none;
+}
+/* HEADER OVER */
+
+/* MAIN CONTENT START */
+main{
+    height: 650px;
+    width: 1200px;
+    background-color: transparent;
+    margin: 10px auto 0px;
+}
+main #ca{
+    margin: 15px 0px 0px 20px;
+    height: 30px;
+    width: 170px;
+    font-size: 20px;
+    padding: 5px 7px;
+    background-color: blue;
+    color: white;
+    border-radius: 3px;
+}
+#main{
+    height: 600px;
+    width: 1200px;
+    background-color: transparent;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+}
+#left{
+    height: 600px;
+    width: 500px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+#vl{
+    height: 550px;
+    width: 2px;
+    background-color: blue;
+    margin: 25px 15px 0px 0px;
+}
+#right{
+    height: 600px;
+    width: 700px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column; 
+}
+/* MAIN CONTENT OVER */
+
+/* FOOTER START */
+#footer{
+    height: 250px;
+    width: 100%;
+    background-color: rgb(0, 0, 63);
+    margin-top: 20px;
+}
+#f1{
+    height: 200px;
+    width: 25%;
+    background-color: transparent;
+    float: left;
+}
+#l1{
+    margin: 20px 0px 10px 80px;
+    font-size: 30px;
+    color: white;
+}
+#l2{
+    margin: 20px 0px 0px 80px;
+    font-size: 20px;
+    color: white;
+}
+#f2{
+    height: 200px;
+    width: 25%;
+    background-color: transparent;
+    float: left;
+}
+#f3{
+    height: 200px;
+    width: 25%;
+    background-color: transparent;
+    float: left;
+}
+#f4{
+    height: 200px;
+    width: 25%;
+    background-color: transparent;
+    float: left;
+}
+#lastl{
+    height: 30px;
+    width: 430px;
+    color: white;
+    margin: 10px auto;
+    font-size: 20px;
+    background-color: transparent;
+}
+/* FOOTER OVER */

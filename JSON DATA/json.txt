@@ -1,0 +1,8 @@
+JSON : Java Script Object Notation
+----------------------------------
+
+The JSON format is similar to the code for creating JavaScript objects.
+
+The file type for JSON files is ".json"
+
+JSON is used to send data between computers.

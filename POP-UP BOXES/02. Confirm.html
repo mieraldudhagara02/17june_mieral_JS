@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Confirm </title>
+</head>
+<body>
+    <div style="font-size: 25px; width: 530px;">If you want to Delete your Data, then hit the Button.</div>
+    <button style="margin: 10px 0px; width: 100px; padding: 5px 0px; font-size: 20px;" onclick="del()">DELETE</button>
+
+    <script>
+        function del() {
+            if(window.confirm("Are you sure to delete your data!!")){
+                window.alert("Your data has been deleted, Successfully...");
+                window.location = "https://technology.inquirer.net/files/2017/02/Data-delete-NASA-climate-change-data.jpg";
+            }
+            else{
+                window.location = "02. Confirm.html"
+            }
+        }    
+        </script>
+</body>
+</html>

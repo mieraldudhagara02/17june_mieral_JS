@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Squre_root </title>
+</head>
+<body>
+    <div style="height: 200px; width: 400px; background-color: rgb(0, 110, 118); margin: auto; border-radius: 5px; border: 2px solid rgb(0, 47, 47);">
+        <input type="text" name="" id="number" placeholder="Enter the number " required style="outline: none; border: 2px solid black;margin: 10px 90px; height: 25px; font-size: 20px; width: 200px;"><br><br>
+        <span style="font-size: 25px; color: white; margin-left: 5px;">Square Root:</span> <span id="result" style="font-size: 25px; color: white;"></span><br><br>
+        <button onclick="squreroot()" style="height: 30px; width: 130px; font-size: 20px; margin: 35px 130px 0px 130px; background-color: transparent; border: 1px solid black; color: white;">Square Root</button>
+    </div>
+
+    <script>
+        function squreroot(){
+            const value1 = document.getElementById("number").value;
+            
+            var formula = Math.sqrt(value1);
+            document.getElementById("result").innerHTML = formula;
+        }
+    </script>
+</body>
+</html>

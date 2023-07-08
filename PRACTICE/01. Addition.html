@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Addition </title>
+</head>
+<body>
+    <div style="border: 2px solid black; width: 350px; height: auto; padding: 10px; margin: auto; font-size: 20px;">
+        <label for="fv">Enter First Value:</label>
+        <input type="text" name="" id="fv"><br><br>
+        <label for="sv">Enter Second Value:</label>
+        <input type="text" name="" id="sv"><br><br>
+        <span>Addition is </span> <span id="result"></span><br><br>
+        <button onclick="add()">Click Here!!</button>
+    </div>
+
+    <script>
+        function add(){
+            const first = parseFloat(document.getElementById("fv").value);
+            const Second = parseFloat(document.getElementById("sv").value);
+            const formula = first + Second;
+
+            document.getElementById("result").innerHTML = formula;
+        }
+    </script>
+</body>
+</html>

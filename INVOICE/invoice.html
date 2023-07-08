@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> invoice </title>
+    <style>
+        button{
+            background-color: transparent;
+            border: 2px solid black;
+            padding: 3px 5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur asperiores explicabo officia, maxime cumque ad maiores, exercitationem quidem provident mollitia quos soluta culpa dolores vero dolor incidunt ut voluptates distinctio.</p><br><br>
+    <button id="btn" onclick="Print()">
+        CLICK HERE
+    </button>
+
+    <script>
+        function Print(){
+            var n = document.getElementById("btn").style.display="none";
+            window.print();
+        }
+    </script>
+</body>
+</html>

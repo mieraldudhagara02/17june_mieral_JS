@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Keyboard Events (onkeypress) </title>
+</head>
+<body onkeypress="okp()">
+
+    <script>
+        function okp(){
+            const v1 = parseFloat(window.prompt("Enter First Value:"));
+            const v2 = parseFloat(window.prompt("Enter Second Value:"));
+
+            const formula = v1 + v2;
+
+            window.alert("Addition of v1 and v2 is: " + formula);
+        }
+    </script>
+</body>
+</html>

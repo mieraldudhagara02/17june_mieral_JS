@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> typeof() </title>
+</head>
+<body>
+    <script>
+        //number
+        var n = 12;
+        document.write(typeof(n) + "<br>");
+
+        //number
+        var n = parseFloat(1);
+        document.write(typeof(n) + "<br>");
+
+        //string
+        var n = "12";
+        document.write(typeof(n) + "<br>");
+
+        //bigInt
+        var n = 123456789n;
+        document.write(typeof(n) + "<br>");
+
+        //null
+        var n = null;
+        document.write(typeof(n) + "<br>");
+        //In Javascript, by default all are object
+
+        //undefined
+        var n;
+        document.write(typeof(n) + "<br>");
+        //In Javascript, by default all are object
+
+        //symbol
+        var n = Symbol(32);
+        document.write(typeof(n) + "<br>");
+
+        //object
+        var n = {
+            name : "miral",
+            id : 101
+        }
+        document.write(typeof(n) + "<br>");
+        //object is defined with {}
+        //it's values are stored into property/key and value
+
+        //array
+        var n = [1,"1", "miral"];
+        document.write(typeof(n) + "<br>");
+        //In Javascript, by default all are object
+
+        //boolean
+        var m = true;
+        document.write(typeof(m) + "<br>");
+    </script>
+</body>
+</html>

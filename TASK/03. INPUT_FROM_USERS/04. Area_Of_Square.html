@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Area_Of_Square </title>
+</head>
+<body>
+    <div style="height: 200px; width: 400px; background-color: rgb(0, 110, 118); margin: auto; border-radius: 5px; border: 2px solid rgb(0, 47, 47);">
+        <label for="side" style="font-size: 25px; margin: 20px 5px 0px 10px; color: white;">Enter the value of Side:</label>
+        <input type="text" name="" id="side" style="margin-top: 20px; height: 25px; font-size: 20px; width: 100px; outline: none; border: 2px solid black;"><br><br>
+        <span style="font-size: 25px; color: white; margin-left: 10px;">Area of Square is:</span> <span id="result" style="font-size: 25px; color: white;"></span><br><br>
+        <button onclick="areas()" style="height: 30px; width: 150px; font-size: 20px; margin: 35px 130px 0px 130px; background-color: transparent; border: 1px solid black; color: white;">Area of Square</button>
+
+        <script>
+            function areas(){
+                var side = document.getElementById("side").value;
+
+                var formula = side * side;
+                document.getElementById("result").innerHTML = formula;
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alert </title>
+</head>
+<body>
+    <div style="width: 250px; padding: 10px; margin: auto; height: auto; border: 2px solid black;">
+        <label for="value">Enter a Value:</label>
+        <input type="text" name="" id="v1"><br><br>
+        <button onclick="squareroot()">Click Here!!</button>
+    </div>
+
+    <script>
+        function squareroot(){
+            const value = document.getElementById("v1").value;
+            const formula = Math.sqrt(value);
+
+            alert("Square root is: " +formula);
+        }
+    </script>
+</body>
+</html>

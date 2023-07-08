@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Upper_Case </title>
+</head>
+<body>
+    <div style="height: 700px; width: 600px; background-color: rgb(0, 110, 118); margin: auto; border-radius: 5px; border: 2px solid rgb(0, 47, 47);">
+        <label for="fnm" style="font-size: 25px; margin: 20px 5px 0px 10px; color: white;">Enter Your Name:</label>
+        <input type="text" name="" id="fnm" style="margin-top: 20px; height: 25px; font-size: 20px; width: 200px; outline: none; border: 2px solid black;"><br><br>
+        <label for="lnm" style="font-size: 25px; margin: 20px 5px 0px 10px; color: white;">Enter Your Surname:</label>
+        <input type="text" name="" id="lnm" style="margin-top: 20px; height: 25px; font-size: 20px; width: 200px; outline: none; border: 2px solid black;"><br><br>
+        <label for="address" style="font-size: 25px; margin: 20px 5px 0px 10px; color: white;">Address:</label><br>
+        <textarea name="address" id="address" cols="50" rows="5" style="margin-top: 10px; margin-left: 10px; font-size: 20px; outline: none; border: 2px solid black;"></textarea><br><br>
+        <span  style="font-size: 25px; color: white; margin-left: 10px;"><u>UpperCase:</u></span><br><br>
+        <span  style="font-size: 25px; color: white; margin-left: 10px;">NAME:</span> <span id="upper1"style="font-size: 25px; color: white;"></span><br><br>
+        <span style="font-size: 25px; color: white; margin-left: 10px;">SURNAME:</span> <span id="upper2"style="font-size: 25px; color: white;"></span><br><br>
+        <span style="font-size: 25px; color: white; margin-left: 10px;">ADDRESS:</span> <span id="upper3"style="font-size: 25px; color: white;"></span><br><br>
+        <button onclick="uppercase()" style="height: 30px; width: 250px; font-size: 20px; margin: 100px 0px 0px 170px; background-color: transparent; border: 1px solid black; color: white;">Click Here for UpperCase</button>
+    </div>
+
+    <script>
+        function uppercase(){
+        var fnm = document.getElementById("fnm").value;
+        var lnm = document.getElementById("lnm").value;
+        var add = document.getElementById("address").value;
+
+        var upper1 = fnm.toUpperCase();
+        document.getElementById("upper1").innerHTML = upper1;
+
+        var upper2 = lnm.toUpperCase();
+        document.getElementById("upper2").innerHTML = upper2;
+
+        var upper3 = add.toUpperCase();
+        document.getElementById("upper3").innerHTML = upper3;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Prompt </title>
+    <style>
+        #calc{
+            height: 240px;
+            width: 170px;
+            border: 2px solid black;
+            margin: auto;
+        }
+        button{
+            padding: 3px 5px;
+            font-size: 20px;
+            margin: 10px 15px 0px 15px;
+            width: 135px;
+            border: 2px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="calc">
+        <button id="add" onclick="add()">Addition</button><br><br>
+        <button id="sub" onclick="sub()">Substraction</button><br><br>
+        <button id="mul" onclick="mul()">Multiplication</button><br><br>
+        <button id="div" onclick="div()">Division</button>
+    </div>
+
+    <script>
+        function add(){
+            const add1 = parseFloat(window.prompt("Enter First Value:"));
+            const add2 = parseFloat(window.prompt("Enter Second Value:"));
+            const formula = add1 + add2;
+
+            window.alert("Addition of add1 and add2 is: " + formula);
+        }
+
+        function sub(){
+            const add1 = parseFloat(window.prompt("Enter First Value:"));
+            const add2 = parseFloat(window.prompt("Enter Second Value:"));
+            const formula = add1 - add2;
+
+            window.alert("Addition of add1 and add2 is: " + formula);
+        }
+
+        function mul(){
+            const add1 = parseFloat(window.prompt("Enter First Value:"));
+            const add2 = parseFloat(window.prompt("Enter Second Value:"));
+            const formula = add1 * add2;
+
+            window.alert("Addition of add1 and add2 is: " + formula);
+        }
+
+        function div(){
+            const add1 = parseFloat(window.prompt("Enter First Value:"));
+            const add2 = parseFloat(window.prompt("Enter Second Value:"));
+            const formula = add1 / add2;
+
+            window.alert("Addition of add1 and add2 is: " + formula);
+        }
+    </script>
+</body>
+</html>
