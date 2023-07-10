@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="03. Multiple_User.css">
+    <title> Multiple_User </title>
+</head>
+<body>
+    <form action="">
+    <div id="registration_form">
+        <div id="heading">
+            Login
+        </div>
+        <hr style="border-top: 0.5px solid gray; width: 499px; margin: 3px auto;">
+
+        <label for="option" style="margin-left: 10px; margin-top: 20px;">Login as:</label>
+        <select name="" id="option" style="height: 30px; font-size: 20px; padding: 3px 5px; background-color: transparent; border: 1px solid black; outline: none; margin-top: 20px;">
+        <option value="-SELECT-">-SELECT-</option>
+        <option value="Manager">Manager</option>
+        <option value="Faculty">Faculty</option>
+        <option value="Developer">Developer</option>
+        </select><br><br>
+
+        <label for="username" style="margin-left: 10px;">Username:</label>
+        <input type="text" name="" id="username" style="height: 30px; width: 270px; font-size: 18px; padding: 3px 5px; border: 1px solid black; outline: none; background-color: transparent;"><br><br>
+
+        <label for="pass" style="margin-left: 10px;">Password:</label>
+        <input type="password" name="" id="pass" style="height: 30px; width: 270px; font-size: 18px; padding: 3px 5px; border: 1px solid black; outline: none; background-color: transparent;" required><br><br>
+
+        <button type="button" name="" id="li" value="Login" onclick="miral()" style="width: 70px; height: 30px; font-size: 18px; margin: 0px 0px 0px 180px; background-color: transparent; border: 1px solid black; outline: none;">Login</button>
+
+        <button type="button" style="width: 70px; height: 30px; font-size: 18px; background-color: transparent; border: 1px solid black; outline: none;">Reset</button>
+    </form>
+    </div>
+
+
+    <script>
+
+        var sel = document.getElementById("option").value;
+
+        function miral()
+        {
+            if(sel=="Manager")
+            {
+                window.location="03. Manager.html";
+            }
+            else if(sel=="Faculty")
+            {
+                window.location="03. Faculty.html";
+            }
+            else if(sel=="Developer")
+            {
+                window.location="03. Developer.html";   
+            }
+            else
+            {
+                window.alert("SORRY, YOU ARE NOT ELIGIBLE FOR LOGIN HERE.")
+            }
+        }
+    </script>
+</body>
+</html>

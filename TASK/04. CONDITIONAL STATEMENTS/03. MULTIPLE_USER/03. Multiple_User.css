@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#registration_form{
+    height: 320px;
+    width: 500px;
+    background-color: rgb(233, 233, 233);
+    font-size: 30px;
+    margin: 50px auto;
+    border: 2px solid gray;
+}
+#registration_form #heading{
+    text-align: center;
+}
