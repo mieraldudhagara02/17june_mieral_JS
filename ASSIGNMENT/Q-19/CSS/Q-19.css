@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* QUESTION-19 START */
+#question19{
+    position: relative;
+}
+#question19 #square1{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+}
+#question19 #square2{
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+}
+#question19 #header{
+    position: absolute;
+    top: 120px;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(90deg, #000, #004d40, transparent);
+}
+h1{
+    position: absolute;
+    color: white;
+    top: 130px;
+    left: 50px;
+}
+/* QUESTION-19 OVER */
+
+/* ANSWER-19 */
+#answer19{
+    height: 450px;
+    width: 700px;
+    background-color: rgb(228, 255, 255);
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 260px;
+    left: 420px;
+    font-size: 30px;
+}
+.heading{
+    margin-top: 50px;
+    margin-left: 230px;
+}
+#fn{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+#firstn{
+    margin-left: 31px;
+    height: 30px;
+    width: 200px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #004d40;
+}
+#sn{
+    margin-top: 20px;
+    margin-left: 30px; 
+}
+#secondn{
+    margin-left: 20px;
+    height: 30px;
+    width: 200px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #004d40;
+}
+#button1 button{
+    height: 40px;
+    width: 60px;
+    font-size: 25px;
+    margin-top: 50px;
+}
+#button2 button{
+    height: 40px;
+    width: 60px;
+    font-size: 25px;
+    margin-top: 5px;
+}
+#ans{
+    margin-left: 100px;
+}
+#Result{
+    font-size: 30px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #004d40;
+    width: 100px;
+    height: 35px;
+    margin-left: 5px;
+    padding: 0px 3px;
+}

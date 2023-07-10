@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../Q-20/CSS/Q-20.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Q-19 </title>
+</head>
+<body>
+    
+    <!-- QUESTION-19 START -->
+    <section id="question19">
+        <div id="square1"></div>
+        <div id="square2"></div>
+        <div id="header"></div>
+        <h1>PRACTICAL-3</h1>
+    </section>
+    <!-- QUESTION-19 OVER -->
+
+    <!-- ANSWER-19 START -->
+    <div id="marksheet">
+        <div id="heading">Marksheet for Information Technology</div>
+        <div id="lable">Enter Marks</div>
+        <label for="c" id="lable1">1. C Language</label>
+            <input type="text" name="c" id="cl"><br>
+        <label for="Cp" id="lable2">2. C++ Language</label>
+            <input type="text" name="Cp" id="cp"><br>        
+        <label for="data" id="lable3">3. Database</label>
+            <input type="text" name="data" id="db"><br>
+        <label for="htm" id="lable4">4. HTML</label>
+            <input type="text" name="htm" id="html"><br>
+        <label for="css;" id="lable5">5. CSS</label>
+            <input type="text" name="css" id="Css"><br>
+        <label for="php" id="lable6">6. php</label>
+            <input type="text" name="php" id="phpl"><br>
+        <label for="cj" id="lable7">7. Core Java</label>
+            <input type="text" name="cj" id="core"><br>
+        <input type="submit" name="result" id="Result" value="Result" onclick="sum()"><br>
+        <!-- TOTAL -->
+        <label for="total" id="total">TOTAL:</label>
+        <input type="text" name="total" id="obtain"><span class="tm">/700</span>
+        <!-- PERSENTAGE -->
+        <label for="per" id="per">PERSENTAGE:</label>
+        <span type="text" name="per" id="persentage">%</span>
+    </div>
+
+    <script>
+        var a = parseInt(document.getElementById('cl').value);
+        var b = parseInt(document.getElementById('cp').value);
+        var c = parseInt(document.getElementById('db').value);
+        var d = parseInt(document.getElementById('html').value);
+        var e = parseInt(document.getElementById('Css').value);
+        var f = parseInt(document.getElementById('phpl').value);
+        var g = parseInt(document.getElementById('core').value);
+        var total = document.getElementById('obtain');
+        var Persentage = document.getElementById('persentage')
+
+        function sum(){
+        total.value = a + b + c + d + e + f + g;
+        Persentage.innerHTML = total.value / 7 ;
+        }
+    </script> 
+    <!-- ANSWER-19 OVER -->
+</body>
+</html>

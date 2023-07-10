@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* QUESTION-19 START */
+#question19{
+    position: relative;
+}
+#question19 #square1{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+}
+#question19 #square2{
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+}
+#question19 #header{
+    position: absolute;
+    top: 120px;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(90deg, #000, #004d40, transparent);
+}
+h1{
+    position: absolute;
+    color: white;
+    top: 130px;
+    left: 50px;
+}
+/* QUESTION-19 OVER */
+
+/* ANSWER-19 START */
+#marksheet{
+    position: relative;
+    height: 600px;
+    width: 800px;
+    background-color: #baf4ea;
+    border: 2px solid #004d40;
+    left: 410px;
+    top: 260px;
+}
+#heading{
+    font-size: 30px;
+    position: absolute;
+    left: 145px;
+    top: 10px;
+}
+#lable{
+    position: absolute;
+    top: 100px;
+    left: 330px;
+    font-size: 25px;
+}
+/* LABLE-1 */
+#lable1{
+    font-size: 20px;
+    position: absolute;
+    top: 170px;
+    left: 35px;
+}
+#cl{
+    position: absolute;
+    top: 170px;
+    left: 300px;
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    border: 2px solid #004d40;
+    border-radius: 3px;
+}
+/* LABLE-2 */
+#lable2{
+    font-size: 20px;
+    position: absolute;
+    top: 210px;
+    left: 35px;
+}
+#cp{
+    position: absolute;
+    top: 210px;
+    left: 300px;
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    border: 2px solid #004d40;
+    border-radius: 3px;
+}
+/* LABLE-3 */
+#lable3{
+    font-size: 20px;
+    position: absolute;
+    top: 250px;
+    left: 35px;
+}
+#db{
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    border: 2px solid #004d40;
+    border-radius: 3px;
+}
+/* LABLE-4 */
+#lable4{
+    font-size: 20px;
+    position: absolute;
+    top: 290px;
+    left: 35px;
+}
+#html{
+    position: absolute;
+    top: 290px;
+    left: 300px;
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    border: 2px solid #004d40;
+    border-radius: 3px;
+}
+/* LABLE-5 */
+#lable5{
+    font-size: 20px;
+    position: absolute;
+    top: 330px;
+    left: 35px;
+}
+#Css{
+    position: absolute;
+    top: 330px;
+    left: 300px;
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    border: 2px solid #004d40;
+    border-radius: 3px;
+}
+/* LABLE-6 */
+#lable6{
+    font-size: 20px;
+    position: absolute;
+    top: 370px;
+    left: 35px;
+}
+#phpl{
+    position: absolute;
+    top: 370px;
+    left: 300px;
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    border: 2px solid #004d40;
+    border-radius: 3px;
+}
+/* LABLE-7 */
+#lable7{
+    font-size: 20px;
+    position: absolute;
+    top: 410px;
+    left: 35px;
+}
+#core{
+    position: absolute;
+    top: 410px;
+    left: 300px;
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    border: 2px solid #004d40;
+    border-radius: 3px;
+}
+/* RESULT */
+#Result{
+    position: absolute;
+    top: 470px;
+    left: 350px;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+/* TOTAL */
+#total{
+    position: absolute;
+    top: 530px;
+    font-size: 20px;
+    left: 180px;
+}
+#obtain{
+    position: absolute;
+    top: 530px;
+    font-size: 20px;
+    left: 260px;
+    width: 50px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+.tm{
+    position: absolute;
+    top: 530px;
+    left: 300px;
+    font-size: 25px;
+}
+/* PERSENTAGE */
+#per{
+    position: absolute;
+    top: 530px;
+    font-size: 20px;
+    left: 470px; 
+}
+#persentage{
+    position: absolute;
+    top: 530px;
+    font-size: 20px;
+    left: 610px;
+    width: 50px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+.P{
+    position: absolute;
+    top: 525px;
+    left: 660px;
+    font-size: 25px;
+}
+/* ANSWER-19 OVER */

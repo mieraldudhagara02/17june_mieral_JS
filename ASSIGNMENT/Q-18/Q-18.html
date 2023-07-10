@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../Q-18/CSS/Q-18.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Q-18 </title>
+</head>
+<body>
+    
+    <!-- QUESTION-18 START -->
+    <section id="question18">
+        <div id="square1"></div>
+        <div id="square2"></div>
+        <div id="header"></div>
+        <h1>PRACTICAL-1</h1>
+    </section>
+    <!-- QUESTION-18 OVER -->
+
+    <!-- ANSWER-18 START -->
+    <div id="answer18">
+        <div id="password">
+            <div class="label">
+                <label for="password">ENTER PASSWORD:</label>
+                <input type="password" name="password" id="psd"><br>
+                <input type="checkbox" name="sp" id="Sp" onclick="show()">
+                <label for="sp" id="sp">Show Password</label>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function show(){
+            let a = document.getElementById("psd");
+
+            if (a.type == "password"){
+                a.type = "text";
+            }
+            else{
+                a.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>

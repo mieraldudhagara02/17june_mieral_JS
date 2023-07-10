@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../Q-19/CSS/Q-19.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Q-19 </title>
+</head>
+<body>
+    <!-- QUESTION-19 START -->
+    <section id="question19">
+        <div id="square1"></div>
+        <div id="square2"></div>
+        <div id="header"></div>
+        <h1>PRACTICAL-2</h1>
+    </section>
+    <!-- QUESTION-19 OVER -->    
+
+    <!-- ANSWER-19 START -->
+    <div id="answer19">
+        <span class="heading">Maths Operations</span>
+        <div id="fn">
+            <label for="first">Enter 1st Number:</label>
+            <input type="text" name="first" id="firstn">
+        </div>
+        <div id="sn">
+            <label for="second">Enter 2nd Number:</label>
+            <input type="text" name="second" id="secondn">
+        </div>
+        <div id="button1">
+            <button class="add" style="margin-left: 35px;" onclick="addition()">+</button>
+            <button class="sub" onclick="substarction()">-</button>
+            <button class="mul" onclick="multiplication()">*</button>
+            <span id="ans">Answer is:</span><input type="text" name="result" id="Result" >
+        </div>
+        <div id="button2">
+            <button class="div" style="margin-left: 35px;" onclick="division()">/</button>
+            <button class="mod" onclick="modulo()">%</button>
+        </div>
+    </div>
+
+    <script>
+        let one = parseInt(document.getElementById("firstn").value);
+        let two = parseInt(document.getElementById("secondn").value);
+        let answer = document.getElementById("Result");
+
+        function addition(){
+            answer.value = one + two;
+        }
+
+        function substarction(){
+            answer.value = one - two;
+        }
+
+        function multiplication(){
+            answer.value = one * two;
+        }
+
+        function division(){
+            answer.value = one / two;
+        }
+
+        function modulo(){
+            answer.value = one % two;
+        }
+    </script>
+</body>
+</html>
