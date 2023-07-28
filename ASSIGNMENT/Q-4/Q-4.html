@@ -11,7 +11,27 @@
        $(document).ready(function(){
             $("#one *").css({"color":"red","border":"solid 2px red","margin":"15px","padding":"5px"});
             $("#div").css({"width":"600px"});
-            $("#span").css({"width":"470px","color":"gray","border":"2px solid gray"})
+            $("#span").css({"width":"470px","color":"gray","border":"2px solid gray"});
+
+            $("#body").click(function(){
+                alert("This is Greate Greate GrandParent.");
+            })
+
+            $("#div").click(function(){
+                alert("This is Greate GrandParent.");
+            })
+
+            $("#ul").click(function(){
+                alert("This is GrandParent.");
+            })
+
+            $("#li").click(function(){
+                alert("This is Direct Parent.");
+            })
+
+            $("#span").click(function(){
+                alert("This is Child.");
+            })
         });
     </script>
 
@@ -43,9 +63,9 @@
                     body (greate-greate-grandparent)
                     <div id="div">
                         div (greate-grandparent)
-                        <ul>
+                        <ul id="ul">
                             ul (grandparent)
-                            <li>
+                            <li id="li">
                                 li (direct parent)
                                 <div id="span">span</div>
                             </li>
