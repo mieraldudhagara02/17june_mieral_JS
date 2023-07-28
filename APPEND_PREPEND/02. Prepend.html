@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Prepend </title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("b").prepend("<b>DUDHAGARA &nbsp;</b>");
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="name" style="height: 90px; width: 250px; background-color: rgb(1, 64, 64); color: white; border: 2px solid lightblue; padding: 5px 0px 0px 15px; font-size: 20px; line-height: 1.4; margin: auto;">
+        <b>MIRAL</b><br><br>
+        <button type="button" style="background-color: transparent; border: 2px solid lightblue; margin-left: 80px; color: white;" id="btn"> CLICK ME!! </button>
+    </div>
+</body>
+</html>

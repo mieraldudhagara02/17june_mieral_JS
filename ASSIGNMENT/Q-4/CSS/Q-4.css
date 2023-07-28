@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#Q-4{
+    height: auto;
+    width: 80%;
+    margin: 20px auto 0px;
+    background-color: #dfd5e3;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #271b2c;
+    position: relative;
+}
+
+/* QUESTION STAR */
+
+#question4 #h1{
+    font-size: 30px;
+    width: 630px;
+    margin: 5px auto;
+    letter-spacing: 1px;
+}
+
+/* QUESTION OVER */
+
+/* ANSWER START */
+
+#answer4{
+    margin: 15px 0px 10px 10px;
+    font-size: 20px;
+}

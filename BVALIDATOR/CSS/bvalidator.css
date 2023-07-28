@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+/* HEADER START */
+header{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(0, 79, 79);
+    display: flex;
+    flex-direction: row;
+}
+header img{
+    height: 70px;
+    width: 13%;
+}
+#heading{
+    font-size: 45px;
+    color: white;
+    padding: 5px 0px 0px 350px;
+    letter-spacing: 2px;
+    font-family: doremon_font;
+}
+@font-face {
+    font-family: doremon_font;
+    src: url("../FONT/orange\ juice\ 2.0.ttf");
+}
+/* HEADER OVER */
+
+
+fieldset{
+    width: 550px;
+    height: auto;
+    margin: 50px auto;
+    font-size: 25px;
+    border: 2px solid rgb(0, 79, 79);
+}

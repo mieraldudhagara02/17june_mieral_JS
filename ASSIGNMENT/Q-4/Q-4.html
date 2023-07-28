@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Q-4.css">
+    <title> Q-4 </title>
+    <script src='https://code.jquery.com/jquery-3.7.0.min.js'></script>
+
+    <script>
+       $(document).ready(function(){
+            $("#one *").css({"color":"red","border":"solid 2px red","margin":"15px","padding":"5px"});
+            $("#div").css({"width":"600px"});
+            $("#span").css({"width":"470px","color":"gray","border":"2px solid gray"})
+        });
+    </script>
+
+    <style>
+
+        #one{
+            border: 2px solid red;
+            margin-right: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="Q-4">
+
+        <!-- QUESTION START -->
+
+        <section id="question4">
+            <h1 id="h1">EVENT BUBBLING TICKLING EXAMPLE.</h1>
+        </section>
+        <hr>
+
+        <!--QUESTION OVER  -->
+
+         <!-- ANSWER START -->
+
+         <section id="answer4">
+            <div id="one">
+                <div id="body">
+                    body (greate-greate-grandparent)
+                    <div id="div">
+                        div (greate-grandparent)
+                        <ul>
+                            ul (grandparent)
+                            <li>
+                                li (direct parent)
+                                <div id="span">span</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

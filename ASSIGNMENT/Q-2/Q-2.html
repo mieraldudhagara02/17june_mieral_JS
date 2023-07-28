@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Q-2.css">
+    <title> Q-2 </title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $("#jquery_css").css({
+                "height":"200px",
+                "width":"200px",
+                "background-color":"#bb9fc5",
+                "border":"2px solid #775158"
+            })
+        });
+
+
+        $(document).ready(function(){
+            $("#addclass").addClass("add");
+        })
+
+
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $(".removeclass").removeClass();
+            })
+        })
+
+        $(document).ready(function(){
+            $("#button").click(function(){
+                $(".anim").animate({
+                    left:"100px"
+                })
+            })
+        })
+
+    </script>
+
+    <style>
+        .add{
+            height: 200px;
+            width: 200px;
+            background-color: #bb9fc5;
+            border: 2px solid #775158;
+        }
+
+        .removeclass{
+            height: 200px;
+            width: 200px;
+            background-color: #bb9fc5;
+            border: 2px solid #775158;
+        }
+
+        .anim{
+            height: 100px;
+            width: 100px;
+            background-color: #bb9fc5;
+            border: 2px solid #775158;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="Q-2">
+
+        <!-- QUESTION START -->
+
+        <section id="question2">
+            <h1 id="h1">HOW TO APPLY CSS USING jQuery, HOW TO ADD CLASS AND REMOVE CLASS IN jQuery, jQuery ANIMATION?</h1>
+        </section>
+        <hr>
+
+        <!--QUESTION OVER  -->
+
+        <!-- ANSWER START -->
+
+        <section id="answer2">
+            <section id="one">
+                <h2><u>1. HOW TO APPLY CSS USING jQuery?</u></h2><br>
+                <section id="syntax">
+                    <span><u>SYNTAX:</u></span><br><br>
+                    <div id="syntx">
+                    $(document).ready(function(){<br>
+                    &nbsp; &nbsp; $("selector").css(<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp;"prperty_name":"value",<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp;"prperty_name":"value",<br>
+                    &nbsp; &nbsp; );<br>
+                    });
+                    </div>
+                </section><br><br>
+                <span><u>Apply CSS using jQuery:</u></span><br><br>
+                <div id="jquery_css"></div><br><br>
+            </section>
+        </section><hr>
+
+        <section id="answer2">
+            <section id="one">
+                <h2><u>2. HOW TO ADD CLASS AND REMOVE CLASS IN jQuery?</u></h2><br>
+                <section id="syntax">
+                    <span><u>SYNTAX:</u></span><br><br>
+                    <div id="syntx">
+                    $(document).ready(function(){<br>
+                    &nbsp; &nbsp; $("selector").add();<br>
+                    });
+                    </div>
+                </section><br><br>
+                <span><u>Add Class:</u></span><br><br>
+                <div id="addclass"></div><br><br>
+
+                <span><u>Remove Class:</u></span><br><br>
+                <div class="removeclass"></div><br>
+                <button id="btn" style="background-color: transparent; padding: 3px 5px; border: 2px solid #271b2c; font-size: 20px"> Remove </button><br><br>
+            </section>
+        </section><hr>
+
+        <section id="answer2">
+            <section id="one">
+                <h2><u>3. jQuery ANIMATION</u></h2><br>
+                <button id="button" style="background-color: transparent; padding: 3px 5px; border: 2px solid #271b2c; font-size: 20px"> ANIMATION </button><br><br>
+                <div class="anim">
+
+                </div>
+            </section>
+        </section>
+    </div>
+</body>
+</html>

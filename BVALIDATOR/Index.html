@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> bValidator </title>  
+    <link rel="stylesheet" href="CSS/gray.css">
+    <link rel="stylesheet" href="CSS/bvalidator.css"> 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    
+    <script src="JS/jquery.bvalidator.min.js"></script>
+    <script src="JS/default.min.js"></script>
+    <script src="JS/gray.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("#frm").bValidator();
+        })
+
+    </script>
+</head>
+<body>
+    <header>
+        <img src="IMAGES/01. Image.jpg" alt="">
+        <div id="heading">STUDENT REGISTRATION FORM</div>
+    </header>
+
+        <form action="https://www.google.com" id="frm">
+            <fieldset>
+                <legend>REGISTRATION FORM</legend><br>
+
+                <label for="email" style="margin-left: 10px;">Enter Email:</label>
+                <input type="text" name="email" id="email" placeholder="Email *" data-bvalidator="required,email" style="outline: none; border: 1px solid black; font-size: 20px; padding: 3px 5px; margin-left: 36px"><br><br>
+
+                <label for="password" style="margin-left: 10px;">Enter Password:</label>
+                <input type="password" name="pass" id="password" placeholder="Password *" data-bvalidator="required,minlen[4],maxlen[10]" style="outline: none; border: 1px solid black; font-size: 20px; padding: 3px 5px;"><br><br>
+
+                <input type="submit" name="" id="submit" value="Register" placeholder="Email *" style="border: 2px solid black; font-size: 18px; padding: 3px 5px; margin-left: 190px;"><br><br>
+            </fieldset>
+        </form>
+</body>
+</html>

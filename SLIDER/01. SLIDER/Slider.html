@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Slider </title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("img").css({"height":"500px","width":"500px","margin-left":"500px"});
+            $("#images").cycle("fade");
+            // $("#images").cycle("turnRight");
+            // $("#images").cycle("shuffle");
+            // $("#images").cycle("zoom");
+        });
+    </script>
+</head>
+<body>
+   <section id="slider">
+    <div id="images">
+        <img src="IMAGES/01. Image.jpg" alt="">
+        <img src="IMAGES/02. Image.png" alt="">
+        <img src="IMAGES/03. Image.jpg" alt="">
+        <img src="IMAGES/04. Image.webp" alt="">
+    </div>
+   </section> 
+</body>
+</html>

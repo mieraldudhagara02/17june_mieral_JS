@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Button_Click </title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                var n = window.prompt("Enter Your Age:");
+
+                var m = n>=18 ? "YOU ARE ELIGIBLE FOR VOTE.." : "YOU ARE NOT ELIGIBLE FOR VOTE..";
+
+                window.alert(m);
+            })
+        });
+    </script>
+</head>
+<body bgcolor="lightpink">
+        <div style="height: 50px; width: 150px; margin: 350px auto; ">
+            <button id="btn" style="height: 50px; width: 150px;" type="button"> CLICK ME!! </button>
+        </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hide </title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("#frm").hide(0.5);
+            })
+        })
+    </script>
+</head>
+<body>
+    <header style="height: 40px; width: 100%; background-color: rgb(0, 61, 62);">
+        <button type="button" id="hide" style="height: 30px; width: 70px; float: right; margin-top: 5px; margin-right: 10px; background-color: transparent; border: 1px solid white; color: white; font-size: 20px;">HIDE!</button>
+    </header>
+    <form action="https://www.toptal.com/designers/htmlarrows/symbols/" id="frm" style="width: 500px; height: 300px; background-color: rgb(227, 255, 255); margin: 5px auto 0px; border: 2px solid rgb(0, 61, 62);">
+        <div id="head" style="width: 70px; margin: 20px auto 0px; font-size: 20px;">LOG IN</div><br>
+
+        <div id="hl" style="width: 500px; height: 1.5px; background-color: rgb(0, 61, 62);"></div>
+
+        <label for="username" style="font-size: 25px; margin: 40px 10px 0px 20px;">UserName:</label>
+        <input type="text" name="" id="un" style="margin-top: 40px; font-size: 25px; outline: none;">
+
+        <label for="password" style="font-size: 25px; margin: 20px 10px 0px 20px;">Password:</label>
+        <input type="password" name="" id="pass" style="margin-top: 20px; font-size: 25px; margin-left: 9px; outline: none;">
+
+        <input type="submit" name="" id="btn" value="SignIn" style="margin: 60px 0px 0px 220px; font-size: 20px; padding: 3px 5px; background-color: transparent; border: 1px solid rgb(0, 61, 62);">
+    </form>
+</body>
+</html>
