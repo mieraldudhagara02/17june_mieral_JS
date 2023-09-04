@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alert </title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#closebtn").click(function(){
+                $("#dark").alert('close');
+            })
+
+            $("#dark").on("close.bs.alert", function(){
+                alert("Close");
+            })
+
+            $("#dark").on("closed.bs.alert", function(){
+                alert("Closed");
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-primary mt-5 text-center"><a class="alert-link" href="">HELLOW DOREMON!</a>
+                    <button class="close" data-bs-dismiss="alert" style="float: right; background-color: transparent; border: none; color: blue; font-size: 25px; line-height: 0.8;">&times;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-success mt-5 text-center">
+                    
+                    <button class="close" data-bs-dismiss="alert" style="background-color: transparent; border: none; float: right; font-size: 25px">&times;</button>
+
+                    <h1 class="alert-heading">DOREMON</h1>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, tenetur ipsa facilis minus enim qui dolorum consequatur consectetur dolore quibusdam, iste doloribus doloremque possimus laborum ex assumenda amet recusandae dolorem ratione provident, quisquam omnis. A magnam, odio est praesentium aliquid, voluptate ab laborum voluptatibus sunt ullam cum voluptatum dignissimos provident placeat quibusdam excepturi alias. Recusandae, optio blanditiis veritatis ea, consectetur vitae rerum dicta assumenda natus nulla earum? Reprehenderit dolorum laborum eligendi rerum fugiat. Adipisci error eos corporis atque omnis sapiente, enim est iste, reiciendis ratione magnam dolorem perspiciatis a soluta doloremque nam commodi exercitationem recusandae laborum laudantium maiores quisquam dolore?</p>
+
+                    <hr>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nesciunt?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="dark" class="col">
+                <div class="alert alert-dark mt-5 text-center">HELLOW DOREMON!</div>
+            </div>
+        </div>
+        <button id="closebtn" class="btn btn-danger">CLOSE</button>
+
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-light mt-5 text-center">HELLOW DOREMON!</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-danger mt-5 text-center">HELLOW DOREMON!</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-secondary mt-5 text-center">HELLOW DOREMON!</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-warning mt-5 text-center">HELLOW DOREMON!</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-info mt-5 text-center">HELLOW DOREMON!</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

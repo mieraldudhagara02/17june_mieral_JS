@@ -1,0 +1,62 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#nav
+{
+    background-color: rgb(70, 70, 70);
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-nav .navbar-item a
+{ 
+    display: inline;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.search-box
+{
+    margin-top: 5px;
+    width: 400px;
+}
+
+#search
+{
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+#srch
+{
+    background-color: transparent;
+    border: 2px solid green;
+    color: green;
+    border-radius: 3px;
+}
+
+.carousel
+{
+    background-color: gray;
+}
+
+#heading
+{
+    width: 550px;
+    margin-left: 750px;
+}
+
+#para
+{
+    width: 900px;
+    margin-left: 400px;
+}
+
+#bg
+{
+    margin-left: 1175px;
+}
