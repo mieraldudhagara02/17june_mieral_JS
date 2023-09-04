@@ -1,0 +1,38 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+}
+
+.header-list li
+{
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+#search :focus
+{
+    border: none;
+    outline: none;
+}
+
+.dropdown:hover .dropdown-menu
+{
+    display: block;
+}
+
+.dropdown-menu li
+{
+    
+    display: block;
+}
+ 
+.dropdown-menu li a
+{
+    text-decoration: none;
+    color: black;
+    padding-right: 15px;
+}
