@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assessment </title>
+    <script src="JS/Assessment.js"></script>
+    <link rel="stylesheet" href="CSS/Assessment.css">
+
+    <!-- FONTAWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- JAVASCRIPT -->
+    <script>
+        
+       
+       function mail()
+       {
+        
+        let errorMsg = "please"
+        let email = document.getElementById("Email");
+        if (email.value == "")
+        {
+            let error = document.createElement("span");
+            error.setAttribute("class", "errorr");
+            error.textContent = errorMsg;
+            name.after(error);
+        }
+       }
+    </script>
+
+</head>
+<body>
+    <form action="https://careercenter.tops-int.com" id="frm">
+
+        <div id="header"></div>
+
+        <h2 id="heading">Responsive Registration Form</h2>
+
+        <section id="one">
+            <i class="fa-solid fa-envelope" id="envelope"></i>
+            <input type="email" name="email" id="Email" placeholder="Email"><br>
+        </section>
+
+        <button type="submit" onclick="mail()">Submit</button>
+
+    </form>
+</body>
+</html>

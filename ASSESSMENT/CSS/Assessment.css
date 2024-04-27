@@ -1,0 +1,47 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#frm
+{
+    height: 600px;
+    width: 500px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#header
+{
+    height: 10px;
+    width: 100%;
+    background-color: orange;
+}
+
+#heading
+{
+    margin: 20px auto 0px;
+    width: 80%;
+    font-size: 30px;
+}
+
+#one
+{
+    width: 355px;
+    margin: 40px auto 0px;
+}
+#envelope
+{
+    border: 1px solid gray;
+    padding: 6.5px;
+    font-size: 20px;
+}
+#Email
+{
+    width: 300px;
+    padding: 5px;
+    font-size: 20px;
+    position: relative;
+}
